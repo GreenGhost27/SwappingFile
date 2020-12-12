@@ -1,0 +1,20 @@
+def swappingFiles():
+    file1= input("Enter the name of the file here:-")
+    file2= input("Enter the name of the file here:-")
+    data_A= open(file1, 'r')
+    data_A2= data_A.read()
+    data_B= open(file2, 'r')
+    data_B2= data_B.read()
+    print("Old text in each file:")
+    print(data_B2)
+    print(data_A2)
+    file12= open(file1, 'w')
+    file22= open(file2, 'w')
+    file12.write(data_B2)
+    file22.write(data_A2)
+    print("New switched text in each file:")
+    print(data_A2)
+    print(data_B2)
+    
+
+swappingFiles()
